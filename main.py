@@ -28,12 +28,12 @@ if opt == '1':
       item = 'Fuzz Buzz'
     elif i%3==0:
       item = 'Buzz'
-     elif i%5==0:
+    elif i%5==0:
       item = 'Fuzz'
-     else:
+    else:
       item = str(i)
-     print(item)
-     with open('final.csv','a') as fd:
-       write(fd)
-   duration = time() - start
+    print(item)
+    with open('final.csv','a') as fd:
+      write(fd)
+  duration = time() - start
   print(duration)
