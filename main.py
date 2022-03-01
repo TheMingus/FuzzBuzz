@@ -8,7 +8,8 @@ from csv import writer
 print('Welcome to \u001b[1;38;2;80,200,120mMingus\'\u001b[0m very, very crappy Fuzz Buzz Generator. Please select an option to continue:')
 print('\u001b[1;94m[0]\u001b[0m Fast, but will fill up your ram I think.')
 print('\u001b[1;94m[1]\u001b[0m Slower, doesn\'t fill ram as much I think.\n')
-while opt not in ['1','2']:
+opt = 0
+while opt not in ['0','1']:
   opt = input('> \u001b[91m')
   print('\u001b[0m')
 
