@@ -35,6 +35,6 @@ if opt == '1':
       item = str(i)
     print(item)
     with open('final.csv','a') as fd:
-      write(fd)
+      writer(fd)
   duration = time() - start
   print(duration)
