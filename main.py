@@ -2,9 +2,9 @@ from time import time
 from tqdm import tqdm
 from json import dump
 
-print('Welcome to \u001b[1;38;2;80,200,120mMingus\'\u001b[0m very, very crappy Fuzz Buzz Generator. Please select an option to continue:')
+print('Welcome to \u001b[1;38;2;80,200,120mMingus\'\u001b[0m crappy Fuzz Buzz Generator.')
 
-to = input('Generate to what? ')
+to = int(input('Generate to what? '))
 
 start = time()
 final = ['Fuzz Buzz' if i%15==0 else 'Buzz' if i%3==0 else 'Fuzz' if i%5==0 else str(i) for i in tqdm(range(int(to)))]
